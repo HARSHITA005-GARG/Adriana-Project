@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+  margin: 0%;
+  font-family: "Catamaran", sans-serif;
+}
+
+/* header styles */
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 8px 20px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.navigation ul{
+  margin: 12px 4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navigation ul li{
+  text-decoration: none;
+  color: #000000;
+  list-style: none;
+}
+.navbar a{
+  text-decoration: none;
+  color: #000000;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px;
+}
+.navbar a:hover{
+  color:#FC5C42;
+}
+
+.icons a{
+  background: #EEEEEE;
+  border-radius: 50%;
+  border: #000000 1px solid;
+  margin: 8px;
+  display: flex;
+ justify-content: center;
+}
+.icons a img{
+  width: 12px;
+  height: 12px;
+  padding: 8px;
+}
+.dropdown{
+  position: absolute;
+  display: none;
+  top:3rem;
+  margin-top: 16px;
+  margin-left: 8px;
+  background: #FFFFFF;
+  font-size: 12px;
+  font-weight: 100;
+  border-top: #FC5C42 2px solid;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.dropdown a{
+  padding: 8px 4rem 8px 1rem ;
+  display: block;
+  margin: 8px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  border: #FFFFFF 1px solid;
+  
+}
+#pages:hover + .dropdown {
+  display:block;
+  top: 3rem;
+  transition: all 1s ease-in 4ms;
+}
+#shop:hover + .dropdown {
+  display:block;
+  top: 3rem;
+  transition: all 1s ease-in 4ms;
+}
+#account:hover + .dropdown {
+  display:block;
+  top: 3rem;
+  transition: all 1s ease-in 4ms;
+}
+.dropdown:hover{
+  display:block;
+  transition: all 1s ease-in 4ms;
+}
+.dropdown a:hover{
+  display: block;
+  background: #000000;
+  color:#FFFFFF;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+/* banner styles */
+.banner{
+  background: url('images/slideshow1-1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+}
+.banner-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 4rem ;
+}
+.banner-text{
+  margin-left: 20rem;
+  text-align: left;
+}
+.banner-text p{
+  font-size: 20px;
+  font-weight: 300;
+  color:#43474A;
+  margin: 0;
+}
+.banner-text h1{
+  font-family: "Poppins", sans-serif;
+  font-size: 90px;
+  font-weight: 800;
+  margin: 0;
+}
+.orange{
+  color:#FC5C42;
+}
+.black{
+  color:#000000;
+}
+.button{
+  border: #FC5C42 1px solid;
+  padding: 10px;
+  width: 7.5rem;
+  height: 2.5rem;
+  position: absolute;
+}
+.banner-text button{
+  position:relative;
+  color: #FFFFFF;
+  background: #FC5C42;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  margin: 8px;
+  left: 0.1rem;
+  top: 0.1rem;
+}
+.button-contain:hover > .shop{
+  background: #000000;
+  color:#FFFFFF;
+  transition: all 1s ease-in 1ms;
+}
+.button-contain:hover > .button{
+  border: #000000 1px solid;
+  transition: all 1s ease-in 1ms;
+}
+
+
+.banner img{
+  width: 50px;
+  height: 50px;
+  background: #FC5C42;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+
+
+/* product stylesz */
+
+.product{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  place-content: center;
+  grid-gap:2rem;
+  margin: 4rem 13rem;
+ 
+}
+.product-card{
+  display: grid;
+  padding: 2rem;
+  place-content: end;
+  
+}
+.watch{
+  background: url('images/cat-1.jpg');
+  background-size: cover;
+}
+.bag{
+  background: url('images/cat-2.jpg');
+  background-size: cover;
+}
+.shoe{
+  background: url('images/cat-3.jpg');
+  background-size: cover;
+}
+.product-card p{
+  font-family: 'Source Sans 3',sans-serif;
+  font-size: 18px;
+  color: #757575;
+  margin: 0;
+}
+.product-card h4{
+  font-family: 'Catamaran',sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+.product-card a{
+  display: inline;
+  width: fit-content;
+  text-decoration: none;
+  border-bottom: 1px #FC5C42 solid;
+  color: #FC5C42;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 2px;
+  margin: 1rem 0 0 0;
+  text-transform: uppercase;
+}
+
+
+/* new arrival styles */
+.arrivals{
+  margin: 4rem 13rem;
+  overflow: hidden;
+  text-align: center;
+}
+.arrivals p{
+  font-size: 16px;
+  color: #757575;
+  font-family: 'Source Sans 3',sans-serif;
+  margin: 0 0 3rem 0;
+}
+.arrivals h2{
+  font-family: 'Poppins',sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  margin: 0;
+}
+.arrival-details{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 2rem;
+  place-content: center;
+}
+.arrival-image img{
+  width: 100%;
+  height:100%;
+}
+.arrival-text a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.arrival-text p{
+  font-size: 18px;
+}
+
+/* footer styles */
+footer{
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 8rem;
+  align-items: flex-start;  
+}
+footer div ul{
+  padding: 0;
+}
+footer div ul li{
+  list-style: none;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+footer div ul li a{
+  text-decoration: none;
+  color: #757575;
+  font-size: 16px;
+  font-weight: 500;
+  
+}
+footer div ul li a:hover{
+  color:#FC5C42;
+}
+.company-detail h2{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #757575;
+}
+.company-detail li{
+  font-size: 16px;
+  font-family: "Poppins",sans-serif;
+  color: #757575;
+}
+.company-detail li span{
+  color: #3b3a3a !important;
+  font-weight: 600;
+}
+footer table tr td{
+  padding: 12px 32px 12px 0px;
+
+  font-size: 16px;
+  color: #757575;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 8rem;
+}
+.footer ul{
+  display: flex;
+  list-style: none;
+}
+.footer li{
+  padding-left: 1rem;
+}
+
+
+
+
+
+
+

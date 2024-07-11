@@ -1,0 +1,103 @@
+.contact-page{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 4rem 13rem;
+}
+.contact-card{
+  width: 50%;
+}
+.contact-card h3{
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+.contact-card p{
+  font-size: 16px;
+  color: #757575;
+  font-family: 'Source Sans 3',sans-serif;
+}
+.address{
+  display: flex;
+  justify-content:space-between;
+}
+.address h4{
+  font-size: 22px;
+  font-weight: 600;
+}
+.address span{
+  font-size: 16px;
+}
+.address img{
+  width: 100%;
+  height: 100%;
+  max-width: 1rem;
+  max-height:1rem;
+}
+.contact-address ul{
+  padding: 0;
+}
+.contact-address ul li{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-card form{
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  flex-direction: column;
+}
+.contact-card form::placeholder{
+  font-size: 16px;
+  color:  #495057;
+}
+.contact-card textarea::-webkit-input-placeholder{
+  font-size: 16px;
+  color:  #495057;
+  padding: 0;
+  font-family: "Catamaran", sans-serif;
+}
+.contact-card input, .contact-card textarea{
+  margin: 0 0 20px 0 ;
+  padding: 10px;
+  font-size: 16px;
+  border:none;
+  outline: none !important;
+  white-space: pre-wrap;
+  background: #F9F9F9;
+  font-family: "Catamaran", sans-serif;
+}
+.input-contain{
+  display: flex;
+  gap:1rem;
+  width: 100%;
+} 
+.input-contain input{
+  width: 50%;
+  color:  #495057;
+  background: #F9F9F9;
+  border: none;
+}
+.contact-card input:focus{
+  border: 1px solid  #FB5C42;
+  outline: none !important;
+}
+.contact-card textarea:focus{
+  border:none;
+  outline: none !important;
+}
+.contact-card button{
+padding:15px 25px;
+ color: #fff;
+ font-size: 18px;
+ width: 40%;
+ background-color:  #23272B;
+ border: none;
+}
+.contact-card button:hover{
+ background-color:#FB5C42;
+}

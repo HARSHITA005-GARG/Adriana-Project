@@ -1,0 +1,146 @@
+.about{
+  background: url('images/about-bg.jpg');
+  padding: 6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.about h2{
+  font-size: 40px;
+  font-weight: 600;
+}
+#address{
+  color:#6c757d;
+}
+.about p span{
+  color: #FC5C42;
+}
+
+/* card styles */
+.about-card{
+  display: grid;
+  grid-template-columns: 24% 24% 24%;
+  place-content: center;
+  margin: 4rem 0rem;
+  
+}
+.card-detail{
+  display: grid;
+  grid-template-rows: 60% 40%;
+  margin: 1rem;
+}
+.about-card img{
+  width: 100%;
+  height: 100%;
+  max-height: fit-content;
+}
+.about-card h4{
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0%;
+}
+.about-card p{
+  font-size: 16px;
+  color: #757575;
+}
+
+/*team styles  */
+
+.team{
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-content:center;
+}
+.team-detail h2{
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+}
+.team-detail p{
+  font-size: 16px;
+  color: #757575;
+  text-align: center;
+  margin: 0%;
+}
+.team-members{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%; 
+  place-content: center;
+}
+.team-card{
+  display: grid;
+  grid-template-rows: 80% 20%;
+  margin: 1rem;
+}
+.team-card img{
+  width: 100%;
+  height: 100%;
+  max-height: fit-content;
+}
+.team-card p{
+  text-align: left;
+}
+.team-des h4{
+  font-size: 22px;
+ margin: 0;
+}
+.team-des p{
+  margin: 0%;
+}
+
+
+/* socials page */
+.social{
+  display: flex;
+  justify-content: space-between;
+  place-content: center;
+  margin: 10px;
+  gap: 20px;
+  
+}
+.social-content{
+  position: relative; margin: 10px;
+}
+.image img{
+  width: fit-content;
+  height: fit-content ;
+  max-width: 100%;
+}
+.hover-content{
+  opacity: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.social-content:hover .hover-content{
+  opacity: 1;
+  transition:  0.2 ease;
+}
+.hover-content a{
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hover-content  p{
+  color: #FFFFFF;
+  font-family: 'Poppins',sans-serif;
+  margin: 5px;
+}
+.hover-content a:hover path, .hover-content a:hover p{
+  fill: #FC5C42;
+  color: #FC5C42;
+}
+

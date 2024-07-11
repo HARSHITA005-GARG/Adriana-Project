@@ -1,0 +1,152 @@
+.blog-single{
+  display: grid;
+  margin: 4rem 13rem;
+  place-content: center;
+}
+.blog-single blockquote{
+  border-left: #FC5C42 4px solid;
+  margin: 1rem 0;
+  padding: 20px;
+}
+
+
+.comments{
+  margin: 2rem 13rem 4rem 13rem;
+}
+.comments h4{
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 0 16px 0;
+  margin-bottom: 16px;
+}
+.social-icon{
+  border-top: #dee2e6 1px solid;
+  padding: 16px 0;
+}
+.social-icon a{
+  margin: 16px 0px 16px 5px;
+  
+}
+.social-icon a:hover .change{
+  fill: #23272B;
+}
+.comments h3{
+  font-size: 28px;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.review-container{
+  display: flex;
+  margin: 16px 0;
+  gap: 12px;
+  padding: 2rem 0px;
+}
+.review-container img{
+  width: 8%;
+  height: 8%;
+  max-height: fit-content;
+}
+.review-text h5{
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin:2px;
+  text-align: left;
+}
+.review-text p{
+  font-family: 'Source Sans 3',sans-serif;
+  font-size: 16px;
+  color: #757575;
+  margin: 2px;
+  text-align: left;
+}
+.review-text .dark-text{
+  color: #343a40;
+}
+.review-text button{
+  padding:10px 15px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #343a40;
+  border: none;
+}
+.review-text button:hover{
+  background-color: #23272B;
+
+}
+.review-container:nth-child(2) {
+  margin-left:4rem;
+  border-top: #dee2e6 1px solid;
+}
+.review-container:nth-child(3){
+  border-top: #dee2e6 1px solid;
+}
+
+/* form styles */
+
+.form h4{
+  font-size: 22px;
+  font-weight: 600;
+}
+.form form{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.form form::placeholder{
+  font-size: 16px;
+  color:  #495057;
+}
+.form textarea::-webkit-input-placeholder{
+  font-size: 16px;
+  color:  #495057;
+  padding: 0;
+  font-family: "Catamaran", sans-serif;
+}
+.form textarea{
+  background: #fff;
+  border:  #ced4da 1px solid;
+  padding: 6px 12px ;
+  border-radius: 0%;
+}
+.form input, .form textarea{
+  margin: 0 0 20px 0 ;
+  padding: 15px;
+  font-size: 16px;
+  white-space: pre-wrap;
+  font-family: "Catamaran", sans-serif;
+}
+
+.input-contain{
+  display: flex;
+  gap:1rem;
+  width: 100%;
+} 
+.input-contain input{
+  width: 50%;
+}
+.form input{
+  color:  #495057;
+  background: #EEEEEE;
+  border: none;
+}
+.form input:focus, .form textarea:focus{
+  background: #fff;
+  border: 1px solid  #FB5C42;
+  outline: none !important;
+}
+.form button{
+   padding:20px 35px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #343a40;
+  border: none;
+}
+.form button:hover{
+  background-color: #23272B;
+}
